@@ -240,7 +240,7 @@ def home():
 </div>
 <div class="hero-cards">
 <a class="tile" href="/individuals">{img(art.fan("h1", 7), "h1")}<span class="tag">For individuals</span><span class="t">Prepare for your next step {CHEV}</span></a>
-<a class="tile" href="/corporate-training">{img(art.rings("h2", 11), "h2")}<span class="tag">Corporate training</span><span class="t">Develop the people you depend on {CHEV}</span></a>
+<a class="tile" href="/corporate-training">{img(art.rings("h2", 11, bg="#0b2a42"), "h2")}<span class="tag">Corporate training</span><span class="t">Develop the people you depend on {CHEV}</span></a>
 </div>
 </div></section>
 <section class="dark proof" aria-label="Experience at a glance"><div class="wrap">

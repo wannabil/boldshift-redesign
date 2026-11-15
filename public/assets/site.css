@@ -55,6 +55,8 @@ strong{font-weight:600}
 .eyebrow{display:block;font-size:13px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
 .dark .eyebrow{color:#9fb3c4}
 .display{font-family:var(--serif);font-weight:700;letter-spacing:-.015em;font-size:clamp(40px,6.4vw,76px);line-height:1.02}
+.hero .display{font-size:clamp(40px,6.4vw,64px)}
+@media (min-width:1024px){.hero .display{font-size:clamp(48px,4.6vw,68px)}}
 .display em,.h2 em{font-style:italic;font-weight:400}
 .stagger span{display:block}
 .stagger span:nth-child(2){padding-left:clamp(.6em,4vw,1.6em)}

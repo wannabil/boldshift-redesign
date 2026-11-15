@@ -1,4 +1,5 @@
 node_modules/
 .wrangler/
 tests/shots/
+tests/shots-live/
 .DS_Store
