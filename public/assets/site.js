@@ -12,7 +12,7 @@
     btn.addEventListener('click', () => set(btn.getAttribute('aria-expanded') !== 'true'));
     document.addEventListener('keydown', (ev) => { if (ev.key === 'Escape') set(false); });
     nav.addEventListener('click', (ev) => { if (ev.target.closest('a')) set(false); });
-    matchMedia('(min-width: 961px)').addEventListener('change', () => set(false));
+    matchMedia('(min-width: 901px)').addEventListener('change', () => set(false));
   }
 
   // Tabs (WAI-ARIA pattern, arrow keys + Home/End)
@@ -50,6 +50,16 @@
     els.forEach((el) => io.observe(el));
   } else {
     els.forEach((el) => el.classList.add('in'));
+  }
+
+  // Program finder: route to the best page for the chosen goal
+  const finder = document.getElementById('finder');
+  if (finder) {
+    finder.addEventListener('submit', (ev) => {
+      const goal = finder.querySelector('[name=goal]');
+      const url = goal && goal.selectedOptions[0] && goal.selectedOptions[0].dataset.url;
+      if (url) { ev.preventDefault(); location.href = url; }
+    });
   }
 
   // Contact form -> compose an email (static site, no backend)
