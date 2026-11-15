@@ -1,0 +1,13 @@
+{
+  "name": "boldshift-redesign",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 src/build.py",
+    "shots": "node tests/shots.mjs",
+    "check": "python3 tests/check.py"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}
